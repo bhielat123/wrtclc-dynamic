@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="newlogo1.png"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>West Rembo Learning Center</title> 
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="enroll.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"> 
+        <img src="newlogo1.png">
+        </a> </h1>
+       <nav>
+       <div class="navi">
+       <ul>
+         <li><a href="index.html">Home   </a></li>
+         <li><a href="news.html">News   </a></li>
+         <li><a href="faculty.html">Faculty    </a></li>
+         <li><a href="album.html">Gallery    </a></li>
+       </ul>
+         </div>
+       <div class="nav2">
+         <ul>
+           <li><a href="about us.html">About Us    </a></li>
+           <li><a href="contact us.html">Contacts</a></li>
+         </ul>
+       </div>
+         <div class="search-bar">
+           <input type="text" placeholder="Search...">
+           <button>Search</button>
+         </div>
+       </nav>
+     </header>
+    
+     <div class="enrollment-container">
+        <div class="enrollment-form">
+            <form class="admission-form" action="enrollment_form.php" method="post" enctype="multipart/form-data">
+                <div class="notice1">
+    <div id="page1" class="page active">
+                        <section class="not">
+                            <h2>Data Privacy Notice</h2>
+                            <p>In accordance with the Data Privacy Act of 2012 (Republic Act No. 10173), this app form will take personal important informations, solely for identifying and enrolling the said person or student. All data provided will be treated confidentially, used exclusively for processing that students application, and will not be shared without explicit consent. By participating, you acknowledge your rights as a future student of this school and grant consent for the collection and processing of your data as outlined in the Data Privacy Policy.</p>
+                            <p>Do you agree on giving consent to the collection and processing of your informations, solely for the enrollment process to take place?</p>
+                            <div class="check-container">
+                                <input type="radio" id="consent-yes" name="consent" value="yes" required onchange="showPage(2)">
+                                <label for="consent-yes">Yes</label>
+                                <input type="radio" id="consent-no" name="consent" value="no">
+                                <label for="consent-no">No</label>
+                            </div>
+          </section></div>
+    
+          
+    <div id="page2" class="page">
+                  <section class="sec">
+                       <label for="surname">Surname:</label>
+                      <input type="text" id="surname" name="surname" class="form-input">
+                      
+                      <label for="firstname">First name:</label>
+                      <input type="text" id="firstname" name="firstname" class="form-input"><br>
+                      
+                      <label for="middlename">Middle Name:</label>
+                      <input type="text" id="middlename" name="middlename" class="form-input">
+                      
+                      
+                      </section>
+      
+                  <section class="sec">
+                  
+                    <label>Gender:</label>
+                      <input type="radio" id="gender-male" name="gender" value="male">
+                      <label for="gender-male">Male</label>
+                      
+                      <input type="radio" id="gender-female" name="gender" value="female">
+                      <label for="gender-female">Female</label><br>
+                    </section>
+      
+                    <section class="sec">
+                      <label for="birthplace">Birthplace:</label>
+                      <input type="text" id="birthplace" name="birthplace" class="form-input">
+                      
+                      <label for="email">Email address:</label>
+                      <input type="email" id="email" name="email" class="form-input">
+      
+                      <label for="dob">Date of Birth:</label>
+                     <input type="date" id="dob" name="dob" class="form-input">              
+                  </section>
+      
+                  <section class="sec">
+                    <label for="birth-certificate">Copy of Birth Certificate:</label>
+                      <input type="file" id="birth-certificate" name="birth-certificate" accept=".pdf,.jpg,.png" class="form-input"><br>
+                      
+                      <label for="id-picture">2x2 ID Picture:</label>
+                      <input type="file" id="id-picture" name="id-picture" accept=".jpg,.png" class="form-input"> 
+                  </section>
+                  <button type="button" class="form-nav" onclick="showPage(1)">Previous</button>
+
+                  <button type="button" class="form-nav" style="margin-top: 20px;" onclick="showPage(3)">Next</button> 
+    </div>
+      
+    <div id="page3" class="page">           
+                  <section class="sec1">
+                    <p> <b>Main Address </b></p>
+                     <ul> 
+                      <label for="street">Street/House number:</label>
+                      <input type="text" id="street" name="street" style="width: 100px;" class="form-input">
+                      
+                      <label for="city">City/Municipality:</label>
+                      <input type="text" id="city" name="city" style="width: 100px;" class="form-input">
+                      
+                      <label for="province">Province:</label>
+                      <input type="text" id="province" name="province" style="width: 100px;"class="form-input">
+                      
+                      <label for="zipcode">Postal/Zip Code:</label>
+                      <input type="text" id="zipcode" name="zipcode" style="width: 90px;" class="form-input" pattern="[0-9]{4}">
+                    </ul></section>
+      
+                    <button type="button" class="form-nav" onclick="showPage(2)">Previous</button>
+
+                  <button type="button" class="form-nav" style="margin-top: 20px;" onclick="showPage(4)">Next</button> 
+      
+                  
+                </div>
+          
+      <div id="page4" class="page">
+        <ul><section class="sec">
+                  <h2>Mother's Information</h2>
+                  <label for="motherSurname">Surname:</label>
+                  <input type="text" id="motherSurname" name="motherSurname" class="form-input">
+                  <label for="motherFirst">First name:</label>
+                  <input type="text" id="motherFirst" name="motherFirst" class="form-input">
+                  <label for="motherMiddle">Middle Name:</label>
+                  <input type="text" id="motherMiddle" name="motherMiddle" class="form-input">
+                </section>
+
+                  <section class="sec">
+                  <label for="motherDob">Date of Birth:</label>
+                  <input type="date" id="motherDob" name="motherDob" class="form-input">
+                </ul></section>
+
+               <ul> <section class="sec">
+                  <label for="motherPhone">Phone:</label>
+                  <input type="tel" id="motherPhone" name="motherPhone" class="form-input">
+                  <label for="motherEmail">Email address:</label>
+                  <input type="email" id="motherEmail" name="motherEmail" class="form-input">
+                  <label for="motherOccupation">Occupation:</label>
+                  <input type="text" id="motherOccupation" name="motherOccupation" class="form-input">
+                </ul></section>
+      
+               <ul> <section class="sec">
+                <h2>Father's Information</h2>
+                  <label for="fatherSurname">Surname:</label>
+                  <input type="text" id="fatherSurname" name="fatherSurname" class="form-input">
+                  <label for="fatherFirst">First name:</label>
+                  <input type="text" id="fatherFirst" name="fatherFirst" class="form-input">
+                  <label for="fatherMiddle">Middle Name:</label>
+                  <input type="text" id="fatherMiddle" name="fatherMiddle" class="form-input">
+                </section>
+
+                <section class="sec">
+                  <label for="fatherDob">Date of Birth:</label>
+                  <input type="date" id="fatherDob" name="fatherDob" class="form-input">
+                </ul></section>
+
+                <ul><section class="sec">
+                  <label for="fatherPhone">Phone:</label>
+                  <input type="tel" id="fatherPhone" name="fatherPhone" class="form-input">
+                  <label for="fatherEmail">Email address:</label>
+                  <input type="email" id="fatherEmail" name="fatherEmail" class="form-input">
+                  <label for="fatherOccupation">Occupation:</label>
+                  <input type="text" id="fatherOccupation" name="fatherOccupation" class="form-input">
+                </ul></section>
+
+               <button type="button" class="form-nav" onclick="showPage(3)">Previous</button>
+                  <button type="button" class="form-nav" onclick="showPage(5)">Next</button>
+                </div>
+            
+      <div id="page5" class="page">
+        <section class="sec">
+                <h2>Guardian Information</h2>
+                  <label for="guardianSurname">Surname:</label>
+                  <input type="text" id="guardianSurname" name="guardianSurname" class="form-input">
+                  <label for="guardianFirst">First name:</label>
+                  <input type="text" id="guardianFirst" name="guardianFirst" class="form-input">
+                  <label for="guardianMiddle">Middle Name:</label>
+                  <input type="text" id="guardianMiddle" name="guardianMiddle" class="form-input">
+                </section>
+
+                  <section class="sec">
+                  <label for="guardianDob">Date of Birth:</label>
+                  <input type="date" id="guardianDob" name="guardianDob" class="form-input">
+                
+                  <label for="guardianPhone">Phone:</label>
+                  <input type="tel" id="guardianPhone" name="guardianPhone" class="form-input">
+                  <label for="guardianEmail">Email address:</label>
+                  <input type="email" id="guardianEmail" name="guardianEmail" class="form-input">
+                  <label for="guardianOccupation">Occupation:</label>
+                  <input type="text" id="guardianOccupation" name="guardianOccupation" class="form-input">
+                </section>
+
+                <section class="sec">
+                  <label for="relationship">Relationship:</label>
+                  <select id="relationship" name="relationship" class="form-input">
+                    <option value="grandparent">Grandparent</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="other">Other</option>
+                  </select>
+                </section>
+               <button type="button" class="form-nav" onclick="showPage(4)">Previous</button>
+                  <button type="submit" class="submit-btn" onclick="showConformation()">Submit</button>
+                </div>
+              </form>
+              <div id="confirmation" class="confirmation-message">
+        <div class="confirmation-content">
+          <div class="checkmark">✓</div>
+          <h2>Enrollment Submitted Successfully!</h2>
+          <p>Your application has been received. We'll contact you within 3 business days.</p>
+          <p class="confirmation-note">Check your email for a confirmation receipt.</p>
+        </div>
+      </div>
+         
+        <script src="enroll.js"></script>
+        
+      </body>
+
+      </html>

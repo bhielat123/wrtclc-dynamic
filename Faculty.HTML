@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=DM+Serif+Text:ital@0;1&family=Fredoka:wght@300..700&family=Funnel+Display:wght@300..800&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Puddles&family=Shadows+Into+Light&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <title>Faculty and Staff</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+    body {
+        font-family: DM Serif Text, sans-serif;
+        background-image: url('images/frame2.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* Section Active */
+    .sectionactive {
+        flex: 1; /* Pushes the footer to the bottom */
+        padding: 180px 20px 270px;
+        text-align: center;
+    }
+
+    /* New Header Styles */
+    header {
+        background-image: url("images/header2.PNG"); 
+        background-position: center;
+        background-size: 140%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 10%;
+    }
+
+    h1 img { 
+        max-width: 300px;
+      height: auto;
+      display: block;
+      margin-left: 20px;
+      position: relative;
+      top: 0px; /* Moves the logo upwards */
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav li {
+        font-family: 'Unkempt', sans-serif;
+        margin-right: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding-top: 20px;
+    }
+
+    nav a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #824006;
+    }
+
+    .search-bar {
+	background-color: white;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 1em;
+	margin-top: 14px;
+	margin-bottom: 21px;
+	border-style: none;
+    outline: none;
+	border-bottom: 0px solid #ccc;
+  }
+  .search-bar input {
+	border: none;
+	outline: none;
+	}
+  .search-bar button {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 5px;
+	border-radius: 0 5px 5px 0;
+	}
+
+    /* Navigation */
+    .nav2 {
+        display: flex;
+    }
+
+    .navi {
+        padding-right: 160px;
+    }
+
+    .navi ul {
+        display: flex;
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    .navi li {
+        font-family: 'Unkempt', sans-serif;
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    .navi a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #824006;
+    }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .faculty-section {
+            padding: 4em 2em;
+            background-color: rgba(255, 255, 255, 0.8);  
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 4em auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .faculty-section h2 {
+            font-size: 2.5rem;
+            color: #696969;
+            margin-bottom: 2rem;
+        }
+
+        .faculty-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .faculty-item {
+            font-size: 1.2rem;
+            color: black;  
+            padding: 1em;
+            border-radius: 8px;
+            background-color: LightGrey;  
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            font-family: "Funnel Display", sans-serif;
+        }
+
+        .faculty-item:hover {
+            transform: scale(1.05);
+            background-color: #ffcc00;  
+        }
+
+        .faculty-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            position: relative;
+            font-family: sans-serif;
+        }
+
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+  <h1><a href="index.html"> 
+  <img src="newlogo1.png">
+  </a> </h1>
+  <nav>
+	<div class="navi">
+	<ul>
+	  <li><a href="index.html">Home   </a></li>
+	  <li><a href="news.html">News   </a></li>
+	  <li><a href="faculty.html">Faculty    </a></li>
+	  <li><a href="album.html">Gallery    </a></li>
+	</ul>
+    </div>
+	<div class="nav2">
+    <ul>
+      <li><a href="about us.html">About Us    </a></li>
+      <li><a href="contact us.html">Contacts</a></li>
+    </ul>
+	</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </nav>
+</header>  
+
+    <!-- Main Heading -->
+
+    <!-- Faculty Section -->
+    <section class="faculty-section">
+        <h2>Meet Our Dedicated Faculty and Staff</h2>
+        <div class="faculty-list">
+            <!-- Faculty Member 1: Maria Paz Yanga -->
+            <div class="faculty-item">
+                <img class="faculty-photo" src="Faculty/448795072_8052767738074848_397751384807239059_n.jpg">
+                <p>Maria Paz Yanga</p>
+            </div>
+            
+            <!-- Faculty Member 2: Conchita Domingo -->
+            <div class="faculty-item">
+                <img class="faculty-photo" src="Faculty/40513332_2234230923465682_571622591903563776_n.jpg">
+                <p>Conchita Domingo</p>
+            </div>
+            
+            <!-- Faculty Member 3: Jovelyn Medina -->
+            <div class="faculty-item">
+                <img class="faculty-photo" src="Faculty/461714523_3884580928532664_3380650693360201817_n.jpg">
+                <p>Jovelyn Medina</p>
+            </div>
+            
+            <!-- Faculty Member 4: Marjune Buenaobra -->
+            <div class="faculty-item">
+                <img class="faculty-photo" src="Faculty/Screenshot%202024-11-25%20222729.png">
+                <p>Marjune Buenaobra</p>
+            </div>
+            
+            <!-- Faculty Member 5: Ruby Camara Gisala -->
+            <div class="faculty-item">
+                <img class="faculty-photo" src="Faculty/292498537_5408445059198335_3921681256179007700_n.jpg">
+                <p>Ruby Camara Gisala</p>
+            </div>
+            
+            <!-- Faculty Member 6: Dofel Tuliao Singayan -->
+            <div class="faculty-item">
+                <img class="faculty-photo" src="Faculty/Screenshot%202024-11-25%20223211.png">
+                <p>Dofel Tuliao Singayan</p>
+            </div>
+            
+            <!-- Faculty Member 7: Kate Cabangisan -->
+            <div class="faculty-item">
+                <img class="faculty-photo" src="Faculty/296645885_5486893248033316_3458465720004103623_n.jpg">
+                <p>Kate Cabangisan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 West Rembo Teachers' Compound Learning Center Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

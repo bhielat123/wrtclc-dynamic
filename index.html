@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="wrlogo.png"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West Rembo Learning Center</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+    /* General Styling */
+  body {
+  font-family: 'Baloo', sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column; 
+  min-height: 100vh; /* Ensure body covers the full height of the viewport */
+  background-image: url('images/bgg.jpg');
+  background-size: cover; /* Ensures full coverage */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: scroll; /* Keeps the background in place while scrolling */
+  background-position: relative; /* Centers the background image */
+  color: #333;
+}
+/* Main Content Section */
+.sectionactive {
+  flex: 1; /* Pushes the footer to the bottom */
+  padding: 180px 20px 270px;
+  text-align: center;
+}
+header {
+  background-image: url("html source/header2.png");
+  background-position: center;
+  background-size: 140%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+  h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	width: 10%;
+	}
+  header h1 img {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin-left: 0px;
+      position: relative;
+      top: -10px; /* Moves the logo upwards */
+}
+  nav {
+	display: flex;
+  font-family: 'Unkempt', sans-serif;
+	}
+  nav li {
+	font-family: 'Unkempt', sans-serif;
+	margin-right: 30px;
+    }
+  nav ul {
+	display: flex;
+	list-style: none;
+	padding-top: 15px;
+  }
+  nav a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #824006;
+	}
+  .search-bar {
+	background-color: white;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 1em;
+	margin-top: 15px;
+	margin-bottom: 21px;
+	border-style: none;
+    outline: none;
+	border-bottom: 0px solid #ccc;
+  }
+  .search-bar input {
+	border: none;
+	outline: none;
+	}
+  .search-bar button {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 5px;
+	border-radius: 0 5px 5px 0;
+	}
+  .nav2 {
+	display: center;
+	
+	}
+  .navi {
+	padding-right: 160px;
+	}
+  .navi ul {
+	display: flex;
+	list-style: none;
+	margin-left: 20px;
+	}
+  .navi li {
+	font-family: 'Unkempt', sans-serif;
+	font-size: 20px;
+	margin-right: 30px;
+	
+	}
+  .navi a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #824006;
+	}
+	
+
+ 
+
+	p1 {
+  font-family: 'Baloo', sans-serif;
+  font-size: 20px; /* Adjust the font size to fit your design */
+  color: #000000;
+  text-decoration: none;
+  margin-left: 0; /* Align closer to the edge */
+  text-align: left; /* Ensure text aligns to the left */
+  display: block; /* Ensures it occupies its own line */
+  }
+    p2{
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #FFA500;
+  text-decoration: none;
+  margin-left: 0; /* Align closer to the edge */
+  text-align: left; /* Ensure text aligns to the left */
+	}
+	
+
+    .sectionactive {
+      padding: 180px 20px 270px;
+      text-align: center;
+    }
+
+    /* Learn with Us Button */
+.enroll-btn {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px; /* Adds spacing between buttons */
+  text-align: center;
+}
+
+/* Positioning the buttons in the center */
+.enroll-btn {
+  position: relative;
+  top: 20px; /* Adjust position as necessary */
+  margin-left: -300px;
+  transform: translateX(0);
+}
+
+
+.footer {
+font-family: 'Open Sans', sans-serif;
+
+  position: relative; /* Allow footer to remain part of the page flow */
+  margin-bottom: 0;
+  width: 100%; /* Set the width to span the entire screen */
+  height:200px;
+  border-radius: 0; /* Remove rounded corners for a clean edge */
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+  width: 100%;
+  margin: 0 auto; /* Center-align the content inside the footer */
+  background: rgba(16, 24, 47, 0.5);
+  padding-bottom:30px;
+}
+
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+
+
+
+
+
+</style>
+<body>
+ <header>
+ <h1><a href="index.html"> 
+  <img src="newlogo1.png"> 
+  </a> 
+  </h1>
+  <nav>
+	<div class="navi">
+	<ul>
+	  <li><a href="index.html">Home   </a></li>
+	  <li><a href="news.html">News   </a></li>
+	  <li><a href="faculty.html">Faculty    </a></li>
+	  <li><a href="album.html">Gallery    </a></li>
+	</ul>
+    </div>
+	<div class="nav2">
+    <ul>
+      <li><a href="about us.html">About Us    </a></li>
+      <li><a href="contact us.html">Contacts</a></li>
+    </ul>
+	</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </nav>
+</header>
+
+   <!-- Home Section -->
+ <div class="sectionactive">
+  <p1>
+    <h2><span style="margin-left:50px;">Greetings! Welcome to</h2>
+  </p1>
+  <p2>
+    <h3><span style="margin-left: 30px;">A fun place to</span></h3>
+	<h3><span style="color: red; padding-left: 220px;"><b> PLAY</b></span> and <span style=" color: red;"><b>LEARN</b></span></span></h3>
+  </p2>
+
+  <!-- Enroll Now Button -->
+   <a href="enroll.html" style="margin-right:450px;" class="enroll-btn">Learn with us</a>
+
+</div>
+
+
+<!-- Footer -->
+<section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul class="links">
+             <li><a href="index.html">Home   </a></li>
+			  <li><a href="news.html">News   </a></li>
+			  <li><a href="about us.html">About Us</a></li>
+			  <li><a href="contact us.html">Contacts</a></li>
+			  
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="links">
+		    <li><a href="album.html">Gallery    </a></li>
+             <li><a href="faculty.html">Faculty    </a></li>	 
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+			<h4>Legal</h4>
+			<ul class="links">
+			  <li><a href="about us.html#mission-vision-container">Mission</a></li>
+			  <li><a href="about us.html#mission-vision-container">Vision</a></li>
+			  <li><a href="about us.html#calendar">School Calendar</a></li>
+
+
+          </ul>
+        </div>
+        <div class="footer-col">
+		<a href="https://web.facebook.com/wrtclcinc2002" style= "text-decoration:none;">
+  <h4>Facebook</h4>
+</a>
+
+          
+          <p>
+            Follow our facebook page for a weekly dose
+            of news, updates, helpful tips, and
+            exclusive offers.
+          </p>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
