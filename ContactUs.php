@@ -4,9 +4,9 @@ ini_set('display_errors', 1);
 
 // Database connection settings
 $servername = "localhost";
-$username = "";
+$username = "root";
 $password = "";
-$dbname = "wrtclc";
+$dbname = "contact_db";
 
 // Process form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
