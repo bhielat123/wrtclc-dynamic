@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Fredoka:wght@300..700&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Puddles&family=Shadows+Into+Light&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 /* General Styling */
@@ -35,7 +38,7 @@ body::before {
 }
 
 header {
-    background-image: url("images/header2.png"); 
+    background-image: url("images/header2.PNG"); 
     background-position: center;
     background-size: 140%;
     display: flex ;
@@ -159,11 +162,12 @@ section {
 }
 
 #about-mission-vision {
-    background-color: #219EBC; 
+    background-color: rgba(33, 158, 188, 0.5); 
     padding: 40px 20px; 
     border: 2px solid #4CAF50; 
     border-radius: 10px; 
     margin-top: 20px; 
+    
 }
 
 .content-container {
@@ -173,23 +177,33 @@ section {
 
 .content-container h2 {
     text-align: center; 
-    color: #333; 
+    color: #B22222; 
+    font-family: Rubik Puddles, cursive;
+    font-size: 2.5rem;
+
+
 }
 
 .content-container p {
-    font-size: 1.1em; 
-    color: black; 
-    margin-bottom: 30px; 
+    font-size: 1.4em; 
+    color: rgb(255, 255, 255); 
+    font-family: 'Unkempt', sans-serif; 
+    margin-top: -30px; 
+    font-weight: bold;
+    text-align: center; /* This centers the text horizontally */
 }
 
 .mission-vision-container {
     display: flex; 
     justify-content: space-between; 
+    height: 250px; /* Fixed height */
+    gap: 20px; /* Adds a 20px gap between each container */
+
 }
 
 .mission-item, .vision-item {
     flex: 1; 
-    background-color: #e0f7fa; 
+    background-color: #4CAF50; 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
@@ -197,9 +211,11 @@ section {
 
 .mission-item h3, .vision-item h3 {
     margin-top: 10px; 
-    color: #4CAF50; 
+    color: #B22222; 
     text-align: center; 
-    font-size: 1.5em; 
+    font-size: 2.5em; 
+    font-family: Rubik Puddles, cursive;
+
 }
 
 .mission-item i, .vision-item i {
@@ -211,7 +227,7 @@ section {
 }
 
 .separator {
-    width: 2px; 
+    width: 1px; 
     background-color: #ccc; 
     margin: auto; 
 } 
