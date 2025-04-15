@@ -196,7 +196,7 @@ h3, h2 {
   gap: 2px;
 }
 .gparent-info {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 12px;
   color: #ffffff;
   display: flex; /* Use Flexbox */
