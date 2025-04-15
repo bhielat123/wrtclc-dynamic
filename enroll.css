@@ -38,6 +38,10 @@
       position: relative;
       top: -10px; /* Moves the logo upwards */
 }
+
+h3, h2 {
+  color: #ffffff;
+}
   nav {
 	display: flex;
 	}
@@ -183,7 +187,39 @@
   margin: 0 auto;
   position: relative; /* Added for any absolute positioning needs */
 }
+.parent-info {
+  margin-bottom: 50px;
+  font-size: 12px;
+  color: #ffffff;
+  display: flex; /* Use Flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 2px;
+}
+.gparent-info {
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: #ffffff;
+  display: flex; /* Use Flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 2px;
+}
 
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 15px; 
+}
+
+.info-section label {
+  text-align: right; 
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    grid-template-columns: 1fr; /
+  }
+}
 .page {
   display: none;
 }
@@ -303,6 +339,10 @@ input[type="checkbox"] {
     max-width: 10px;
   }
 }
+
+
+
+
 
 /* Added validation styles */
 .error {
@@ -450,7 +490,7 @@ input:focus, button:focus {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #ffe6e6;
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
