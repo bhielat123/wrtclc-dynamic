@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "your_database_name";
+$dbname = "enroll_db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
