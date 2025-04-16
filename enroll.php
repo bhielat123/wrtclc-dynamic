@@ -1,8 +1,5 @@
 <?php
 
-var_dump($_POST);
-exit;
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -29,9 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "INSERT INTO enrollment_form (
             surname, firstname, middlename, dob, gender, birthplace, phone, email, 
             street, city, province, zipcode, 
-            mother_surname, mother_firstname, mother_middlename, mother_dob, mother_phone, mother_email, mother_occupation, 
-            father_surname, father_firstname, father_middlename, father_dob, father_phone, father_email, father_occupation, 
-            guardian_surname, guardian_firstname, guardian_middlename, guardian_dob, guardian_phone, guardian_email, guardian_occupation, 
+            motherSurname, motherFirst, motherMiddle, motherDob, motherPhone, motherEmail, motherOccupation, 
+            fatherSurname, fatherFirst, fatherMiddle, fatherDob, fatherPhone, fatherEmail, fatherOccupation, 
+            guardianSurname, guardianFirst, guardianMiddle, guardianDob, guardianPhone, guardianEmail, guardianOccupation, 
             relationship
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
     );
