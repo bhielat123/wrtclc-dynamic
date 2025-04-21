@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <style>
 
@@ -16,11 +16,10 @@
     font-family: 'Poppins', sans-serif;
     
   }
-  
 
    a:hover {
     color: #0a0a0a; 
-    background-color: #8e8f8f; 
+    background-color: rgba(227, 223, 223, 1); 
     border-radius: 5px;
   }
 
@@ -39,23 +38,31 @@
   .sidenav a {
     display: block;
     color: black;
-    padding: 12px 10px ;
+    padding-left: 25px;
+    padding-top: 15px;
     text-decoration: none;
-  }
-
-  .sidenav a:hover {
-    background-color: #444;
+    border-radius: 0px;
+    font-size: 18px;
   }
 
   .ident {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 7px;
   }
 
+  .ident a {
+            font-size: 16px;
+            padding-left: 5px;
+        }
+
+
+
+
   .ident img {
-    max-width: 20%;
-	  height: auto;
+    max-width: 50px;
+	  height: 50px;
     padding-left: 10px;
+    padding-top: 25px;
   }
 
   .main-content {
@@ -100,30 +107,6 @@
     border-radius: 10px;
   }
 
-  div .enrollees {
-    margin-right: 10px;
-    display: block;
-    width: 100%; 
-    height: 250px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 15px;
-    font-size: large;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-
-  div .news {
-    margin-right: 10px;
-    display: block;
-    width: 46.5%; 
-    height: 250px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 15px;
-    font-size: large;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-
   .gallery {
     margin-right: 10px;
     display: block;
@@ -149,16 +132,17 @@
 
 <div class="sidenav">
   <div class="ident">
-    <img src="newlogo1.png" style="border-radius: 50%">
-    <a href="" class="Name">WRTCLC</a>
+    <img src="adminpics/wrlogo.png">
+    <a href="" class="Name">West Rembo Teacher's Compound Learning Center</a>
   </div>
-<a href="admin_side.html">Dashboard</a>
-<a href="facultyadminside.html">Faculties</a>
-<a href="studentsadmin.html">Students</a>
-<a href="enrolleesadmin.html">Enrollees</a>
-<a href="newsadmin.html">News</a>
-<a href="galleryadmin.html"> Gallery</a>
-<a href="index.html">Logout</a>
+<a href="newadmin.html">Dashboard</a>
+<a href="faculty.html">Faculties</a>
+<a href="students.html">Students</a>
+<a href="enrollees.html">Enrollees</a>
+<a>News</a>
+<a href="gallery.html"> Gallery</a>
+<a href="emails.html">Emails</a>
+<a href="C:\Users\kurtr\OneDrive\Desktop\HTML\web page\index.html">Logout</a>
 </div>
 
 </header>
@@ -172,25 +156,64 @@
 
   <div class="faculty">
     <a class="titlesss">Published News</a>
-    <p></p>
+    <p>list of published news</p>
   </div>
 
   <div class="students">
     <a class="titlesss">Main Article</a>
-    <p></p>
+    <p>edit main article, insert picture and caption to database</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
   </div>
 
-  <div class="news">
-    <a class="titlesss">Sub Articles</a>
-    <p></p>
+  <div class="students">
+    <a class="titlesss">Sub Article 1</a>
+    <p>edit sub articles insert picture and caption  to database</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
   </div>
-
-  <div class="enrollees">
-    <a class="titlesss">for future ideas</a>
-    <p></p>
+  
+  <div class="students">
+    <a class="titlesss">Sub Article 2</a>
+    <p>edit sub articles insert picture and caption to database</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
   </div>
-</div>
+  
+  <div class="students">
+    <a class="titlesss">Sub Article 3</a>
+    <p>edit sub articles insert picture and caption to database</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
+  </div>
+  
+  <div class="students">
+    <a class="titlesss">Sub Article 4</a>
+    <p>edit sub articles insert pictureand caption to database</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
+  </div>
+  
+  <div class="students">
+    <a class="titlesss">Sub Article 5</a>
+    <p>edit sub articles insert picture and caption to database</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
+  </div>
+  
 
-
+ </div>
 </body>
 </html>

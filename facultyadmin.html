@@ -20,7 +20,7 @@
 
    a:hover {
     color: #0a0a0a; 
-    background-color: rgba(227, 223, 223, 1); 
+    background-color:rgba(227, 223, 223, 1); 
     border-radius: 5px;
   }
 
@@ -57,6 +57,7 @@
         }
 
 
+
   .ident img {
     max-width: 50px;
 	  height: 50px;
@@ -82,33 +83,7 @@
     border-radius: 10px;
   }
 
-  div .students {
-    margin-right: 10px;
-    display: relative;
-    width: 23.3%; 
-    height: 155px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 15px;
-    font-size: large;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    padding-right: 100px; /* space for the logo */
-  }
-
-  .students img {
-    position: absolute;
-    top: 50%;
-    right: -10px;
-    transform: translateY(-50%);
-    height: 185px;
-    width: auto;
-    pointer-events: none;
-  }
-
-
-  div .enrollees {
+  div .faculty {
     margin-right: 10px;
     display: block;
     width: 100%; 
@@ -120,7 +95,7 @@
     border-radius: 10px;
   }
 
-  .gallery {
+      div  .gallery {
     margin-right: 10px;
     display: block;
     width: 100%; 
@@ -131,16 +106,10 @@
     font-size: large;
     margin-bottom: 10px;
     border-radius: 10px;
-    margin-left: 0%;
   }
 
   .titlesss {
     font-weight: 1000;
-  }
-
-  .num {
-    font-size: xx-large;
-    margin: 0;
   }
 
   
@@ -155,9 +124,9 @@
     <a href="" class="Name">West Rembo Teacher's Compound Learning Center</a>
   </div>
 <a href="newadmin.html">Dashboard</a>
-<a href="faculty.html">Faculties</a>
+<a>Faculties</a>
 <a href="students.html">Students</a>
-<a>Enrollees</a>
+<a href="enrollees.html">Enrollees</a>
 <a href="news.html">News</a>
 <a href="gallery.html"> Gallery</a>
 <a href="emails.html">Emails</a>
@@ -167,47 +136,27 @@
 </header>
 <header class="tophead">
   <div class="title">
-    <a class="titlesss">Enrollees</a>
+    <a class="titlesss">Faculties</a>
   </div>
 </header>
 
 <div class="main-content">
 
-  <div class="students">
-    <a class="titlesss">Total</a>
-    <p class="num">display total enrollees</p>
-    <img src="adminpics/populationlogo.png">
-    <div>
-      
-    </div>  
+  <div class="faculty">
+    <a class="titlesss">Image Changer</a>
+    <p>upload image of teacher to database to use for changing</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
   </div>
 
-  <div class="students">
-    <a class="titlesss">Male</a>
-    <p class="num">display total male enrollees</p>
-    <img src="adminpics/malelogo.png">
-  </div>
-
-  <div class="students">
-    <a class="titlesss">Female</a>
-    <p class="num">display total female enrollees</p>
-    <img src="adminpics/femalelogo.png">
-  </div>
-
-  <div class="enrollees">
-    <a class="titlesss">Enrollment Forms</a>
-    <p>List of enrolleesand their infromations from database </p>
-  </div>
-
-  <div class="enrollees">
-    <a class="titlesss">Status</a>
-    <p>enrollees Status(enrolled, not Accepted, and on proccess) </p>
-  </div>
-
-  <div class="gallery">
-    <a class="titlesss">Students Update</a>
-    <p>update status from database </p>
+    <div class="gallery">
+    <a class="titlesss">Name Changer</a>
+    <p>upload name of teacher to database to use for changing</p>
   </div>
 </div>
+
+
 </body>
 </html>
